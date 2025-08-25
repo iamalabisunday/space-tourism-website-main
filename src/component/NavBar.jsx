@@ -10,42 +10,35 @@ export default function NavBar() {
         <div className="w-[35rem] h-[1px] text-white opacity-[0.25]">
           <hr />
         </div>
-        <nav className="w-fit h-auto flex justify-end items-center">
+        <nav>
           <ul className="w-fit uppercase text-white flex gap-[3rem] justify-end items-center">
             <li>
-              <NavLink to="/" className="h-[5.8125rem] flex items-center">
-                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
-                  <span className="font-[700] tracking-[0.16875rem]">00</span>{" "}
-                  Home
+              <NavLink to="/" className="navLink">
+                <p className="navtext">
+                  <span className="navSpan">00</span> Home
                 </p>
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/destination"
-                className="h-[5.8125rem] flex items-center"
-              >
-                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
-                  <span className="font-[700] tracking-[0.16875rem]">01</span>
+              <NavLink to="/destination" className="navLink">
+                <p className="navtext">
+                  <span className="navSpan">01</span>
                   Destination
                 </p>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/crew" className="h-[5.8125rem] flex items-center">
-                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
-                  <span className="font-[700] tracking-[0.16875rem]">02</span>
+              <NavLink to="/crew" className="navLink">
+                <p className="navtext">
+                  <span className="navSpan">02</span>
                   Crew
                 </p>
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/technology"
-                className="h-[5.8125rem] flex items-center"
-              >
-                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
-                  <span className="font-[700] tracking-[0.16875rem]">03</span>
+              <NavLink to="/technology" className="navLink">
+                <p className="navtext">
+                  <span className="navSpan">03</span>
                   Technology
                 </p>
               </NavLink>

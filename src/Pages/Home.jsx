@@ -6,7 +6,7 @@ import NavBar from "../component/NavBar.jsx";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen my-auto relative">
+    <div className="w-full h-screen my-auto relative bg-primary">
       {/* Navigation Section */}
       <header className="absolute top-0 left-0 w-full flex justify-between items-center">
         <NavBar />
@@ -16,15 +16,14 @@ export default function Home() {
           <section className="w-full h-[21.4375rem] flex flex-row justify-end items-end">
             <div className="w-full grid grid-cols-2">
               {/* Text Section */}
-              <div className="w-full min-h-[21.4375rem] flex flex-col">
-                <div className="text-[1.75rem] font-[400] tracking-[0.25rem] leading-auto text-[#D0D6F9] uppercase">
-                  <p>So, you want to travel to</p>
-                </div>
-
-                <h1 className="text-[9rem] font-normal uppercase text-white leading-auto">
+              <div className="w-full min-h-[21.4375rem] flex flex-col gap-6">
+                <p className="font-barlowCondensed text-[1.75rem] font-[400] tracking-[0.25rem] leading-auto text-secondaryBlue uppercase">
+                  So, you want to travel to
+                </p>
+                <h1 className="font-bellefair text-[9rem] font-normal uppercase text-white leading-[1]">
                   Space
                 </h1>
-                <p className="text-[1.125rem] leading-[1.8] font-normal text-[#D0D6F9]">
+                <p className="font-barlow text-[1.125rem] leading-[1.8] font-[200] text-secondaryBlue">
                   Let’s face it; if you want to go to space, you might as well
                   genuinely go to outer space and not hover kind of on the edge
                   of it. Well sit back, and relax because we’ll give you a truly
@@ -33,11 +32,12 @@ export default function Home() {
               </div>
               {/* Explore Section */}
               <div className="w-full flex justify-end items-center">
-                <div className="w-[17rem] h-[17rem] rounded-full bg-white text-[2rem] text-black flex justify-center items-center hover:scale-110 hover:shadow-[0_0_0_40px_rgba(255,255,255,0.1)] hover:transition-all hover:ease-in-out hover:duration-300 cursor-pointer">
-                  <NavLink to="/destination" className="font-light">
-                    EXPLORE
-                  </NavLink>
-                </div>
+                <NavLink
+                  to="/destination"
+                  className="w-[17rem] h-[17rem] rounded-full bg-white text-[2rem] text-primary flex justify-center items-center hover:scale-110 hover:shadow-[0_0_0_40px_rgba(255,255,255,0.1)] hover:transition-all hover:ease-in-out hover:duration-300 cursor-pointer font-bellefair font-light"
+                >
+                  EXPLORE
+                </NavLink>
               </div>
             </div>
           </section>

@@ -10,12 +10,12 @@
 /* Customizining */
 @theme {
   /* Font Family */
-  --font-barlow: "Barlow Condensed", sans-serif;
+  --font-barlowCondensed: "Barlow Condensed", sans-serif;
   --font-bellefair: "Bellefair", serif;
   --font-barlow: "Barlow", sans-serif;
   /* Colors */
   --color-primary: #0b0d17;
-  --color-blue-300: #d0d6f9;
+  --color-secondaryBlue: #d0d6f9;
   --color-white: #fff;
 }
 

@@ -2,13 +2,28 @@ import Background from "../component/assets/technology/background-technology-des
 import BackgroundMobile from "../component/assets/technology/background-technology-mobile.jpg";
 import BackgroundTablet from "../component/assets/technology/background-technology-tablet.jpg";
 import NavBar from "../component/NavBar.jsx";
+import NavBarTable from "../component/NavBarTable.jsx";
+import NavBarPhone from "../component/NavBarPhone.jsx";
 
 export default function Technology() {
   return (
     <div className="w-full h-screen my-auto relative">
       {/* Navigation Section */}
       <header className="absolute top-0 left-0 w-full flex justify-between items-center">
-        <NavBar />
+        {/* Laptop (lg and up) */}
+        <div className="w-full hidden lg:block">
+          <NavBar />
+        </div>
+
+        {/* Tablet (sm to lg-1) */}
+        <div className="w-full hidden sm:block lg:hidden">
+          <NavBarTable />
+        </div>
+
+        {/* Phone (below sm) */}
+        <div className="w-full block sm:hidden">
+          <NavBarPhone />
+        </div>
       </header>
       {/* Background Section */}
       <picture>

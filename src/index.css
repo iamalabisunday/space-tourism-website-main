@@ -53,3 +53,7 @@ li {
 li:not(.active):hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
+
+.active .navtext .navNumber {
+  display: none;
+}

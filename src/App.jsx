@@ -4,6 +4,7 @@ import Destination from "./Pages/Destination";
 import Crew from "./Pages/Crew";
 import Technology from "./Pages/Technology";
 import PageNotFound from "./Pages/PageNotFound";
+import "./index.css";
 
 export default function App() {
   return (

@@ -7,12 +7,16 @@ export default function NavBar() {
       {/* Navigation Section */}
       <div className="container flex justify-between items-center mx-auto z-10">
         <SpaceLogo />
+        <div className="w-[35rem] h-[1px] text-white opacity-[0.25]">
+          <hr />
+        </div>
         <nav className="w-fit h-auto flex justify-end items-center">
           <ul className="w-fit uppercase text-white flex gap-[3rem] justify-end items-center">
             <li>
               <NavLink to="/" className="h-[5.8125rem] flex items-center">
-                <p className="w-fit flex gap-[0.75rem] font-light">
-                  <span className="font-bold ">00</span> Home
+                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
+                  <span className="font-[700] tracking-[0.16875rem]">00</span>{" "}
+                  Home
                 </p>
               </NavLink>
             </li>
@@ -21,16 +25,17 @@ export default function NavBar() {
                 to="/destination"
                 className="h-[5.8125rem] flex items-center"
               >
-                <p className="w-fit flex gap-[0.75rem] font-light">
-                  <span className="font-bold">01</span>
+                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
+                  <span className="font-[700] tracking-[0.16875rem]">01</span>
                   Destination
                 </p>
               </NavLink>
             </li>
             <li>
               <NavLink to="/crew" className="h-[5.8125rem] flex items-center">
-                <p className="w-fit flex gap-[0.75rem] font-light">
-                  <span className="font-bold">02</span>Crew
+                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
+                  <span className="font-[700] tracking-[0.16875rem]">02</span>
+                  Crew
                 </p>
               </NavLink>
             </li>
@@ -39,8 +44,9 @@ export default function NavBar() {
                 to="/technology"
                 className="h-[5.8125rem] flex items-center"
               >
-                <p className="w-fit flex gap-[0.75rem] font-light">
-                  <span className="font-bold">03</span>Technology
+                <p className="w-fit flex gap-[0.75rem] font-[400] tracking-[0.125rem] text-[1rem]">
+                  <span className="font-[700] tracking-[0.16875rem]">03</span>
+                  Technology
                 </p>
               </NavLink>
             </li>

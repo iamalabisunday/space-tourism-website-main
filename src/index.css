@@ -1,8 +1,20 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+
+li {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
 
 .active {
   border-bottom: 2px solid white;
 }
-.inactive {
-  text-decoration: none;
+
+/* Only non-active items get hover effect */
+li:not(.active):hover {
+  border-bottom: 2px solid white;
+}
+
+body {
+  font-family: "Bellefair", serif;
 }

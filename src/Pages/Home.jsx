@@ -1,7 +1,6 @@
 import Background from "../component/assets/home/background-home-desktop.jpg";
 import BackgroundMobile from "../component/assets/home/background-home-mobile.jpg";
 import BackgroundTablet from "../component/assets/home/background-home-tablet.jpg";
-import SpaceLogo from "../component/SpaceLogo.jsx";
 import NavBar from "../component/NavBar.jsx";
 
 export default function Home() {

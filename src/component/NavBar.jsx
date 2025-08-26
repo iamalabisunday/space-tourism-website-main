@@ -3,9 +3,9 @@ import SpaceLogo from "./SpaceLogo";
 
 export default function NavBar() {
   return (
-    <div className="relative w-full flex py-8">
+    <div className="relative w-full flex pt-[2.5rem]">
       {/* Navigation Section */}
-      <div className="container flex justify-between items-center mx-auto z-10">
+      <div className=" container w-[90rem] h-auto  flex justify-between items-center mx-auto z-10 px-[4rem]">
         <SpaceLogo />
         <div className="w-[35rem] h-[1px] text-white opacity-[0.25]">
           <hr />

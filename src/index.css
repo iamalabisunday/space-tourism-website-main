@@ -37,6 +37,7 @@
     height: 5.8125rem;
     display: flex;
     align-items: center;
+    font-family: var(--font-barlowCondensed);
   }
 }
 

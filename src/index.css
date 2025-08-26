@@ -51,10 +51,18 @@ li {
 }
 
 /* Only non-active items get hover effect */
-li:not(.active):hover {
+li:not(.nav .active):hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+/* Phone NavBar active mobe */
+
 .active .navtext .navNumber {
   display: none;
+}
+
+.navBarMobile .active p {
+  width: 100%;
+  border-right: 3px solid white;
+  border-bottom: none;
 }

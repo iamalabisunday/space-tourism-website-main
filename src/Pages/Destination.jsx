@@ -7,7 +7,7 @@ import Planet from "../component/Planet.jsx";
 export default function Destination() {
   return (
     <div
-      className="w-full lg:h-screen mx-auto min-h-screen justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] 
+      className="w-full mx-auto min-h-screen justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] 
       md:bg-[url(/destination/background-destination-tablet.jpg)] 
           bg-[url(/destination/background-destination-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >

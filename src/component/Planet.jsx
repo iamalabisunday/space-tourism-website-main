@@ -53,8 +53,8 @@ export default function Planet() {
           <hr class="border-[0.0625rem] border-while opacity-[0.25] w-full"></hr>
           {/* ---------------------Distance and Time Section--------------------------------- */}
           <div className="w-full bg-green-900 flex justify-start align-center gap-[1.5rem]">
-            <DistanceTime />
-            <DistanceTime />
+            <DistanceTime distance="Avg. Distance" time="384,400 km" />
+            <DistanceTime distance="Est. travel time" time="3 days" />
           </div>
         </div>
       </section>
@@ -62,16 +62,12 @@ export default function Planet() {
   );
 }
 
-function DistanceTime() {
+// Distance Time section
+function DistanceTime({ distance, time }) {
   return (
     <div className="w-full flex flex-col font-barlowCondensed font-[200] uppercase">
-      <p className="tracking-[0.125rem]">AVG. DISTANCE</p>
-      <p className="font-bellefair lg:text-[1.75rem]">384,400 km</p>
+      <p className="tracking-[0.125rem]">{distance}</p>
+      <p className="font-bellefair lg:text-[1.75rem]">{time}</p>
     </div>
   );
 }
-
-// <div className="w-full bg-blue-900">
-//               <p>EST. TRAVEL TIME</p>
-//               <p>3 days</p>
-//             </div>

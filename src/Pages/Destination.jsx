@@ -7,7 +7,8 @@ import Planet from "../component/Planet.jsx";
 export default function Destination() {
   return (
     <div
-      className="w-full lg:h-screen mx-auto min-h-screen justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] md:bg-[url(/home/background-destination-tablet.jpg)] 
+      className="w-full lg:h-screen mx-auto min-h-screen justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] 
+      md:bg-[url(/destination/background-destination-tablet.jpg)] 
           bg-[url(/destination/background-destination-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
       <div className="w-full h-full flex flex-col mx-auto justify-start items-center lg:gap-[3rem]">

@@ -1,7 +1,5 @@
+import { NavLink, Outlet } from "react-router-dom";
 import Moon from "/destination/image-moon.png";
-// import Mars from "destination/image-mars.png";
-// import Europa from "destination/image-europa.png";
-// import Titan from "destination/image-titan.png";
 
 export default function Planet() {
   return (
@@ -16,19 +14,42 @@ export default function Planet() {
         <div className="lg:w-[27.8125rem] lg:h-[30rem] bg-red-800 flex flex-col justify-center items-center gap-[2.5rem]">
           <div className="font-barlowCondensed text-[1rem]">
             {/* ---------------------NavLink Section--------------------------------- */}
-            <div className="w-full text-secondaryBlue flex justify-start align-center gap-[2rem] uppercase tracking-[0.125rem]">
-              <div className="pb-2 border-b-2  font-400">
-                <p>Moon</p>
-              </div>
-              <div className="pb-2 border-b-2  font-400">
-                <p>Mars</p>
-              </div>
-              <div className="pb-2 border-b-2  font-400">
-                <p>Europa</p>
-              </div>
-              <div className="pb-2 border-b-2  font-400">
-                <p>Titan</p>
-              </div>
+            <div>
+              <nav>
+                <ul className="w-full text-secondaryBlue flex justify-start align-center gap-[2rem] uppercase tracking-[0.125rem]">
+                  <li>
+                    <NavLink to="/destination/moon">
+                      <div className="pb-2 border-b-2  font-400">
+                        <p>Moon</p>
+                      </div>
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink to="/destination/mars">
+                      <div className="pb-2 border-b-2  font-400">
+                        <p>Mars</p>
+                      </div>
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink to="/destination/europa">
+                      <div className="pb-2 border-b-2  font-400">
+                        <p>Europa</p>
+                      </div>
+                    </NavLink>
+                  </li>
+
+                  <li>
+                    <NavLink to="/destination/titan">
+                      <div className="pb-2 border-b-2  font-400">
+                        <p>Titan</p>
+                      </div>
+                    </NavLink>
+                  </li>
+                </ul>
+              </nav>
             </div>
             {/* ---------------------Text Section--------------------------------- */}
             <div className="flex flex-col justify-center items-center">

@@ -10,7 +10,7 @@ export default function Destination() {
       md:bg-[url(/destination/background-destination-tablet.jpg)] 
           bg-[url(/destination/background-destination-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
-      <div className="w-full h-full flex flex-col mx-auto justify-start items-center lg:gap-[3rem]">
+      <div className="w-full h-full flex flex-col mx-auto justify-start items-center lg:gap-[3rem] sm:min-h-screen">
         {/* Navigation Section */}
         <header className="w-full flex justify-between items-center">
           {/* Laptop (lg and up) */}
@@ -29,9 +29,9 @@ export default function Destination() {
           </div>
         </header>
         {/* Text and Explore Section */}
-        <section className="w-full lg:w-[69.375rem] text-white flex flex-col lg:gap-[1.5rem]">
+        <section className="w-full md:px-[2rem] lg:w-[69.375rem] text-white flex flex-col gap-[1.5rem] justify-center items-center md:my-[2rem]">
           {/* Heading text */}
-          <div className="w-full flex lg:justify-start lg:items-center lg:gap-[1.5rem] lg:text-[1.75rem] font-barlowCondensed tracking-[0.25rem] font-200">
+          <div className="md:w-full w-fit flex md:justify-start justify-center lg:items-center md:gap-[1.5rem] gap-[0.8rem] md:text-[1.75rem] text-[1rem] font-barlowCondensed md:tracking-[0.25rem] tracking-[0.125rem]] font-200">
             <span className="text-white opacity-[0.25]">01</span>
             <p className="uppercase">Pick your destination</p>
           </div>

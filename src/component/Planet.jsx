@@ -18,9 +18,9 @@ export default function Planet() {
   const currentImage = planetImages[location.pathname] || MoonImg;
 
   return (
-    <div className="lg:w-[1110px] lg:h-[734px] flex lg:justify-start lg:items-center lg:gap-[1.5rem] lg:py-[6%] lg:px-[3rem]">
-      <section className="lg:w-[539px] lg:h-[734px] flex justify-center items-center">
-        <div className="lg:w-[480px] lg:h-[480px]">
+    <div className="lg:w-[1110px] lg:h-[734px] flex lg:flex-row flex-col lg:justify-start items-center lg:gap-[1.5rem] lg:py-[6%] lg:px-[3rem] px-[1.5rem]">
+      <section className="lg:w-[539px] lg:h-[734px] md:w-[28rem] md:h-[28rem] w-[327px] h-[208px] flex justify-center items-center">
+        <div className="lg:w-[480px] lg:h-[480px] md:w-[18.75rem] w-[9.375rem]">
           <img src={currentImage} alt="Planet Image" />
         </div>
       </section>
@@ -28,8 +28,8 @@ export default function Planet() {
       <section className="lg:w-[539px] lg:h-[734px] flex justify-center items-center">
         <div>
           {/* ---------------------NavLink Section--------------------------------- */}
-          <nav className="font-barlowCondensed text-[1rem]">
-            <ul className="w-full text-secondaryBlue flex justify-start align-center gap-[1.5rem] uppercase tracking-[0.125rem]">
+          <nav className="font-barlowCondensed md:text-[1rem] text-[0.875rem]">
+            <ul className="w-full text-secondaryBlue flex lg:justify-start justify-center align-center gap-[1.5rem] uppercase tracking-[0.125rem]">
               <li>
                 <NavLink to="/destination/moon">
                   <div className="pb-2 font-400">

@@ -29,14 +29,14 @@ export default function Destination() {
           </div>
         </header>
         {/* Text and Explore Section */}
-        <section className="w-full lg:w-[69.375rem] text-white flex flex-col lg:gap-[1.5rem] bg-green-900">
+        <section className="w-full lg:w-[69.375rem] text-white flex flex-col lg:gap-[1.5rem]">
           {/* Heading text */}
           <div className="w-full flex lg:justify-start lg:items-center lg:gap-[1.5rem] lg:text-[1.75rem] font-barlowCondensed tracking-[0.25rem] font-200">
             <span className="text-white opacity-[0.25]">01</span>
             <p className="uppercase">Pick your destination</p>
           </div>
           {/* ------------------------------------------------------ */}
-          <article className="w-full bg-blue-900">
+          <article className="w-full">
             <Planet />
           </article>
         </section>

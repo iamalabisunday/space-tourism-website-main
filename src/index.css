@@ -57,8 +57,10 @@ li:not(.nav .active):hover {
 
 /* Phone NavBar active mobe */
 
-.active .navtext .navNumber {
-  display: none;
+@media (max-width: 670px) {
+  li:not(.nav .active):hover {
+    border-bottom: 2px solid transparent;
+  }
 }
 
 .navBarMobile .active p {

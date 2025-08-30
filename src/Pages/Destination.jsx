@@ -29,7 +29,7 @@ export default function Destination() {
           </div>
         </header>
         {/* Text and Explore Section */}
-        <section className="w-full md:px-[2rem] lg:w-[69.375rem] text-white flex flex-col gap-[1.5rem] justify-center items-center md:my-[2rem]">
+        <section className="w-full lg:px-[0rem] md:px-[2rem] lg:w-[69.375rem] text-white flex flex-col gap-[1.5rem] justify-center items-center md:my-[2rem]">
           {/* Heading text */}
           <div className="md:w-full w-fit flex md:justify-start justify-center lg:items-center md:gap-[1.5rem] gap-[0.8rem] md:text-[1.75rem] text-[1rem] font-barlowCondensed md:tracking-[0.25rem] tracking-[0.125rem]] font-200">
             <span className="text-white opacity-[0.25]">01</span>

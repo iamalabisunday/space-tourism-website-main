@@ -3,7 +3,7 @@ import SpaceLogo from "./SpaceLogo";
 
 export default function NavBar() {
   return (
-    <div className="relative w-full flex pt-[2.5rem]">
+    <div className="relative w-full flex mt-4">
       {/* Navigation Section */}
       <div className=" container w-[90rem] h-auto  flex justify-between items-center mx-auto z-10 px-[4rem]">
         <SpaceLogo />

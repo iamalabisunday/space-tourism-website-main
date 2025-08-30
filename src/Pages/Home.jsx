@@ -9,7 +9,7 @@ export default function Home() {
       className="w-full lg:h-screen mx-auto min-h-screen justify-center items-center lg:bg-[url(/home/background-home-desktop.jpg))] md:bg-[url(/home/background-home-tablet.jpg)] 
         bg-[url(/home/background-home-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
-      <div className="w-full h-full flex flex-col mx-auto justify-center items-center">
+      <div className="w-full min-h-full flex flex-col mx-auto justify-center items-center">
         {/* Navigation Section */}
         <header className="lg:absolute lg:top-0 lg:left-0 w-full flex justify-between items-center">
           {/* Laptop (lg and up) */}

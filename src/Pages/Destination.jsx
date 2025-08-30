@@ -6,11 +6,11 @@ import Planet from "../component/Planet.jsx";
 export default function Destination() {
   return (
     <div
-      className="w-full mx-auto min-h-screen justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] 
+      className="w-full mx-auto h-full justify-center items-center lg:bg-[url(/destination/background-destination-desktop.jpg))] 
       md:bg-[url(/destination/background-destination-tablet.jpg)] 
           bg-[url(/destination/background-destination-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
-      <div className="w-full h-full flex flex-col mx-auto justify-start items-center lg:gap-[3rem] sm:min-h-screen">
+      <div className="w-full flex flex-col min-h-screen mx-auto lg:justify-start justify-start items-center">
         {/* Navigation Section */}
         <header className="w-full flex justify-between items-center">
           {/* Laptop (lg and up) */}
@@ -35,10 +35,8 @@ export default function Destination() {
             <span className="text-white opacity-[0.25]">01</span>
             <p className="uppercase">Pick your destination</p>
           </div>
-          {/* ------------------------------------------------------ */}
-          <article className="w-full">
-            <Planet />
-          </article>
+          {/* -----------------------Planet Section------------------------------- */}
+          <Planet />
         </section>
       </div>
     </div>

@@ -28,10 +28,10 @@ export default function App() {
         </Route>
         <Route path="/crew" element={<Crew />}>
           <Route index element={<Commander />} />
-          <Route path="commander" element={Commander} />
-          <Route path="mission" element={Mission} />
-          <Route path="pilot" element={Pilot} />
-          <Route path="engineer" element={Engineer} />
+          <Route path="commander" element={<Commander />} />
+          <Route path="mission" element={<Mission />} />
+          <Route path="pilot" element={<Pilot />} />
+          <Route path="engineer" element={<Engineer />} />
         </Route>
         <Route path="/technology" element={<Technology />} />
         <Route path="*" element={<PageNotFound />} />

@@ -41,18 +41,26 @@
   }
 }
 
-li {
+li,
+.planetState {
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
 }
 
-.active {
+.navDesktop .active,
+.active .planetState {
   border-bottom: 2px solid white;
 }
 
 /* Only non-active items get hover effect */
-li:not(.nav .active):hover {
+/* li:not(.nav .active):hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+} */
+
+/* Crew Page Switch */
+.crew .active .crewMode {
+  background-color: white;
+  opacity: 1;
 }
 
 /* Phone NavBar active mobe */

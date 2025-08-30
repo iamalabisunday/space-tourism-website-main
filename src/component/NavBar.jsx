@@ -12,31 +12,43 @@ export default function NavBar() {
         </div>
         <nav>
           <ul className="w-fit uppercase text-white flex gap-[3rem] justify-end items-center">
-            <li>
-              <NavLink to="/" className="navLink">
-                <p className="navtext">
+            <li className="navDesktop">
+              <NavLink
+                to="/"
+                className="navLink hover:border-b-1 hover:border-while/50"
+              >
+                <p className="navtext ">
                   <span className="navSpan">00</span> Home
                 </p>
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/destination" className="navLink">
+            <li className="navDesktop">
+              <NavLink
+                to="/destination"
+                className="navLink hover:border-b-1 hover:border-while/50"
+              >
                 <p className="navtext">
                   <span className="navSpan">01</span>
                   Destination
                 </p>
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/crew" className="navLink">
+            <li className="navDesktop">
+              <NavLink
+                to="/crew"
+                className="navLink hover:border-b-1 hover:border-while/50"
+              >
                 <p className="navtext">
                   <span className="navSpan">02</span>
                   Crew
                 </p>
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/technology" className="navLink">
+            <li className="navDesktop">
+              <NavLink
+                to="/technology"
+                className="navLink hover:border-b-1 hover:border-[#ffffff7a]"
+              >
                 <p className="navtext">
                   <span className="navSpan">03</span>
                   Technology

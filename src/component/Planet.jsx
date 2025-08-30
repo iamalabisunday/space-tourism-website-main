@@ -32,7 +32,7 @@ export default function Planet() {
             <ul className="w-full text-secondaryBlue flex lg:justify-start justify-center align-center gap-[1.5rem] uppercase tracking-[0.125rem]">
               <li>
                 <NavLink to="/destination/moon">
-                  <div className="pb-2 font-400">
+                  <div className="planetState pb-2 font-400 hover:border-b-1 hover:border-[#ffffff7a]">
                     <p>Moon</p>
                   </div>
                 </NavLink>
@@ -40,7 +40,7 @@ export default function Planet() {
 
               <li>
                 <NavLink to="/destination/mars">
-                  <div className="pb-2 font-400">
+                  <div className="planetState pb-2 font-400 hover:border-b-1 hover:border-[#ffffff7a]">
                     <p>Mars</p>
                   </div>
                 </NavLink>
@@ -48,7 +48,7 @@ export default function Planet() {
 
               <li>
                 <NavLink to="/destination/europa">
-                  <div className="pb-2 font-400">
+                  <div className="planetState pb-2 font-400 hover:border-b-1 hover:border-[#ffffff7a]">
                     <p>Europa</p>
                   </div>
                 </NavLink>
@@ -56,7 +56,7 @@ export default function Planet() {
 
               <li>
                 <NavLink to="/destination/titan">
-                  <div className="pb-2 font-400">
+                  <div className="planetState pb-2 font-400 hover:border-b-1 hover:border-[#ffffff7a]">
                     <p>Titan</p>
                   </div>
                 </NavLink>

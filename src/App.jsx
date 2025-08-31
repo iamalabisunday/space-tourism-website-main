@@ -12,6 +12,9 @@ import Commander from "./component/Commander";
 import Mission from "./component/Mission";
 import Pilot from "./component/Pilot";
 import Engineer from "./component/Engineer";
+import Launch from "./component/Launch";
+import Spaceport from "./component/Spaceport";
+import SpaceCapsule from "./component/SpaceCapsule";
 import "./index.css";
 
 export default function App() {
@@ -33,7 +36,12 @@ export default function App() {
           <Route path="pilot" element={<Pilot />} />
           <Route path="engineer" element={<Engineer />} />
         </Route>
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/technology" element={<Technology />}>
+          <Route index element={<Launch />} />
+          <Route path="launch" element={<Launch />} />
+          <Route path="spaceport" element={<Spaceport />} />
+          <Route path="spaceCapsule" element={<SpaceCapsule />} />
+        </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

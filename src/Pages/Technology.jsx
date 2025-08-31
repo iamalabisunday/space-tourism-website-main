@@ -44,25 +44,41 @@ export default function Technology() {
             <section className="lg:min-w-[33.7rem] flex flex-col lg:justify-center lg:items-center bg-green-900">
               {/* Text Content Section */}
               <div className="w-full h-full lg:min-h-[38.4rem] min-h-[17.4rem] flex flex-col md:justify-center justify-start lg:items-center items-start pt-[2.5rem] lg:pt-[0rem] bg-yellow-700">
-                <div className="flex gap-[2rem] lg:w-full md:w-[70%] font-bellefair font-[300] text-center lg:text-start bg-blue-900">
-                  <div className="w-fit flex flex-col justify-between">
-                    <p className="w-[5rem] h-[5rem] rounded-full bg-white flex items-center justify-center text-[2rem] font-bellefair font-[300] text-primary">
-                      1
-                    </p>
-                    <p className="w-[5rem] h-[5rem] rounded-full border-1 border-primary flex items-center justify-center text-[2rem] font-bellefair font-[300]">
-                      2
-                    </p>
-                    <p className="w-[5rem] h-[5rem] rounded-full border-1 border-primary flex items-center justify-center text-[2rem] font-bellefair font-[300]">
-                      3
-                    </p>
-                  </div>
+                <div className="flex flex-col lg:flex-row gap-[2rem] lg:w-full md:w-full font-bellefair font-[300] text-center lg:text-start bg-blue-900 justify-center items-center">
+                  {/* Navigation Section */}
+                  <nav>
+                    <ul className="flex lg:flex-col flex-row justify-between md:gap-[2rem] lg:gap-[0.5rem] gap-[1rem]">
+                      <li>
+                        <NavLink to="launch">
+                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full bg-white flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-primary text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                            <p>1</p>
+                          </div>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="spaceport">
+                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                            <p>2</p>
+                          </div>
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="spaceCapsule">
+                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                            <p>3</p>
+                          </div>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </nav>
                   <TechnologyText />
+                  <Outlet />
                 </div>
               </div>
             </section>
 
             {/* Photo Section */}
-            <div className="w-full lg:min-h-[38rem] md:min-h-[25rem] bg-primary bg-[url(/technology/image-launch-vehicle-portrait.jpg)] bg-cover bg-center bg-no-repeat lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem] md:mt-[2rem] lg:mt-[0rem]"></div>
+            <div className="w-full lg:min-h-[38rem] min-h-[18rem] md:min-h-[25rem] bg-primary bg-[url(/technology/image-launch-vehicle-portrait.jpg)] bg-cover bg-center bg-no-repeat lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem] md:mt-[2rem] lg:mt-[0rem]"></div>
           </div>
         </section>
       </div>

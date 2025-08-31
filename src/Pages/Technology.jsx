@@ -44,27 +44,27 @@ export default function Technology() {
             <section className="lg:min-w-[33.7rem] flex flex-col lg:justify-center lg:items-center bg-green-900">
               {/* Text Content Section */}
               <div className="w-full h-full lg:min-h-[38.4rem] min-h-[17.4rem] flex flex-col md:justify-center justify-start lg:items-center items-start pt-[2.5rem] lg:pt-[0rem] bg-yellow-700">
-                <div className="flex flex-col lg:flex-row gap-[2rem] lg:w-full md:w-full font-bellefair font-[300] text-center lg:text-start bg-blue-900 justify-center items-center">
+                <div className="flex flex-col lg:flex-row gap-[0.7rem] lg:gap-[1rem] lg:w-full md:w-full font-bellefair font-[300] text-center lg:text-start bg-blue-900 justify-center items-center">
                   {/* Navigation Section */}
                   <nav>
                     <ul className="flex lg:flex-col flex-row justify-between md:gap-[2rem] lg:gap-[0.5rem] gap-[1rem]">
                       <li>
                         <NavLink to="launch">
-                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full bg-white flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-primary text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                          <div className="space lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-white text-[1.125rem] w-[2.5rem] h-[2.5rem]">
                             <p>1</p>
                           </div>
                         </NavLink>
                       </li>
                       <li>
                         <NavLink to="spaceport">
-                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                          <div className="space lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
                             <p>2</p>
                           </div>
                         </NavLink>
                       </li>
                       <li>
                         <NavLink to="spaceCapsule">
-                          <div className="lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
+                          <div className="space lg:w-[5rem] lg:h-[5rem] md:w-[3.5rem] md:h-[3.5rem] rounded-full border-1 border-primary flex items-center justify-center md:text-[2rem] font-bellefair font-[300] text-[1.125rem] w-[2.5rem] h-[2.5rem]">
                             <p>3</p>
                           </div>
                         </NavLink>

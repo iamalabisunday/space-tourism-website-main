@@ -63,6 +63,12 @@ li,
   opacity: 1;
 }
 
+/* Space Launch */
+.active .space {
+  background-color: white;
+  color: #0b0d17;
+}
+
 /* Phone NavBar active mobe */
 
 @media (max-width: 670px) {

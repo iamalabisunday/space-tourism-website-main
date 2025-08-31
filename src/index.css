@@ -67,6 +67,7 @@ li,
 .active .space {
   background-color: white;
   color: #0b0d17;
+  border: 1px solid;
 }
 
 /* Phone NavBar active mobe */

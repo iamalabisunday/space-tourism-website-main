@@ -1,11 +1,45 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLocation, NavLink, Outlet } from "react-router-dom";
 import NavBar from "../component/NavBar.jsx";
 import NavBarTable from "../component/NavBarTable.jsx";
 import NavBarPhone from "../component/NavBarPhone.jsx";
-// import techImage from "/technology/image-launch-vehicle-portrait.jpg";
 import TechnologyText from "../component/TechnologyText.jsx";
+import TechImage from "/technology/image-launch-vehicle-portrait.jpg";
+import TechImageTablet from "/technology/image-launch-vehicle-landscape.jpg";
+import LaunchImg from "/technology/image-launch-vehicle-portrait.jpg";
+import LaunchImgTablet from "/technology/image-launch-vehicle-landscape.jpg";
+import SpaceportImag from "/technology/image-spaceport-portrait.jpg";
+import SpaceportImgTablet from "/technology/image-spaceport-landscape.jpg";
+import SpaceCapsuleImg from "/technology/image-space-capsule-portrait.jpg";
+import SpaceCapsuleImgTablet from "/technology/image-space-capsule-landscape.jpg";
 
 export default function Technology() {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const location = useLocation();
+
+  // Map routes to image
+  const TechImag = {
+    "/technology/launch": isDesktop ? LaunchImg : LaunchImgTablet,
+    "/technology/spaceport": isDesktop ? SpaceportImag : SpaceportImgTablet,
+    "/technology/spaceCapsule": isDesktop
+      ? SpaceCapsuleImg
+      : SpaceCapsuleImgTablet,
+  };
+
+  const currentImage = TechImag[location.pathname] || LaunchImg;
+
+  useEffect(() => {
+    // initial check
+    const checkScreenSize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
+
   return (
     <div
       className="w-full mx-auto h-full justify-center items-center 
@@ -78,14 +112,18 @@ export default function Technology() {
             </section>
 
             {/* Photo Section */}
-            <div className="relative w-full lg:min-h-[38rem] min-h-[18.4rem] md:min-h-[25rem] bg-primary bg-[url(/technology/image-launch-vehicle-portrait.jpg)] bg-cover bg-center bg-no-repeat lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem] md:mt-[2rem] lg:mt-[0rem]"></div>
+            <div
+              className="relative w-full lg:min-h-[38rem] min-h-[18.4rem] md:min-h-[25rem] bg-primary bg-cover bg-center bg-no-repeat lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem] md:mt-[2rem] lg:mt-[0rem] object-cover"
+              style={{
+                backgroundImage: `url(${currentImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            ></div>
           </div>
         </section>
       </div>
     </div>
   );
-}
-
-{
-  /* <img src={techImage} alt="Technology" /> */
 }

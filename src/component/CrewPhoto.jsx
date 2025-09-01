@@ -22,7 +22,7 @@ export default function CrewPhoto() {
       style={{ backgroundImage: `url(${currentphoto})` }}
     >
       {/* Gradient only at the bottom */}
-      <div className="absolute bottom-0 left-0 w-full h-[10%] bg-gradient-to-t from-[#151828fa] from-[77.39%] to-[#D9D9D9]/0 to-[100%]"></div>
+      <div className="absolute bottom-0 left-0 w-full h-[5%] bg-gradient-to-t from-[#0b0e17fa] from-[10.0%] to-[#D9D9D9]/0 to-[100%]"></div>
     </section>
   );
 }

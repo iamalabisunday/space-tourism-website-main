@@ -18,7 +18,7 @@ export default function CrewPhoto() {
 
   return (
     <section
-      className="relative lg:min-w-[33.7rem] lg:max-h-[45.9rem] md:min-h-[35rem] flex justify-center items-center mt-[1.5rem] md:mt-[2rem] lg:mt-[0rem] bg-cover"
+      className="relative w-full min-h-[20rem] lg:min-w-[33.7rem] lg:max-h-[45.9rem] md:min-h-[35rem] flex justify-center items-center mt-[1.5rem] md:mt-[2rem] lg:mt-[0rem] bg-cover"
       style={{ backgroundImage: `url(${currentphoto})` }}
     >
       {/* Gradient only at the bottom */}

@@ -9,7 +9,7 @@ export default function Crew() {
   return (
     <div
       className="w-full mx-auto h-full justify-center items-center 
-      lg:bg-[url(/crew/background-crew-desktop.jpg))] 
+      lg:bg-[url(/crew/background-crew-desktop.jpg)] 
         md:bg-[url(/crew/background-crew-tablet.jpg)] 
           bg-[url(/crew/background-crew-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
@@ -76,10 +76,10 @@ export default function Crew() {
               </div>
             </section>
             {/* Photo Section */}
-            <div className="lg:w-full md:w-[70%] font-bellefair font-[300] text-center lg:text-start">
-              <p className="lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem]">
+            <div className="lg:w-full md:w-[70%] w-full mt-[2.5rem] md:mt-[0rem] font-bellefair font-[300] text-center lg:text-start">
+              <div className="lg:text-[2rem] md:text-[1.5rem] uppercase text-[1.125rem]">
                 <CrewPhoto />
-              </p>
+              </div>
             </div>
           </div>
         </section>

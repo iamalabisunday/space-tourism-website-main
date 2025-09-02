@@ -6,7 +6,7 @@ import NavBarPhone from "../component/NavBarPhone.jsx";
 export default function Home() {
   return (
     <div
-      className="w-full lg:h-screen mx-auto min-h-screen justify-center items-center lg:bg-[url(/home/background-home-desktop.jpg))] md:bg-[url(/home/background-home-tablet.jpg)] 
+      className="w-full lg:bg-red-900 lg:min-h-screen lg:py-[10rem] min-h-screen justify-center items-center lg:bg-[url(/home/background-home-desktop.jpg))] md:bg-[url(/home/background-home-tablet.jpg)] 
         bg-[url(/home/background-home-mobile.jpg)] bg-cover bg-center bg-no-repeat"
     >
       <div className="w-full min-h-full flex flex-col mx-auto justify-center items-center">

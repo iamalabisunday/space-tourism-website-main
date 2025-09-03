@@ -63,7 +63,9 @@ export default function Planet() {
               </li>
             </ul>
           </nav>
-          <Outlet />
+          <div className="w-full">
+            <Outlet />
+          </div>
         </div>
       </section>
     </div>

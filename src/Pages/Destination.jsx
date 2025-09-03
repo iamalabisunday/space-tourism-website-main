@@ -1,4 +1,4 @@
-import { outlet } from "react-router-dom";
+// import { outlet } from "react-router-dom";
 import NavBar from "../component/NavBar.jsx";
 import NavBarTable from "../component/NavBarTable.jsx";
 import NavBarPhone from "../component/NavBarPhone.jsx";
@@ -42,7 +42,7 @@ export default function Destination() {
 
           {/* ----------------------- Planet Section ------------------------------- */}
           <Planet />
-          <outlet />
+          {/* <outlet /> */}
         </section>
       </div>
     </div>

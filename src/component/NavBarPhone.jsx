@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Open from "../component/assets/shared/icon-hamburger.svg";
 import Close from "../component/assets/shared/icon-close.svg";
-import Logo from "../component/assets/shared/logo.svg";
+import SpaceLogo from "./SpaceLogo";
 
 export default function NavBarPhone() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +12,7 @@ export default function NavBarPhone() {
     <div className="relative w-full flex p-[1.5rem]">
       {/* Top bar */}
       <div className="w-full flex justify-between items-center z-20">
-        <img src={Logo} alt="Logo" className="w-[2.5rem] h-[2.5rem]" />
+        <SpaceLogo className="w-[2.5rem] h-[2.5rem]" />
         <img
           onClick={toggleMenu}
           src={isOpen ? Close : Open}
